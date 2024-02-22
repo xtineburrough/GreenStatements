@@ -5,7 +5,7 @@
 
 // get the quotes from the url
     const getQuotes = async (page, limit) => {
-        const API_URL = '../quotes.json';
+        const API_URL = 'http://xtineburrough.github.io/GreenStatements/quotes.json';
         const response = await fetch(API_URL);
         // handle 404
         if (!response.ok) {
