@@ -3,22 +3,9 @@
     const quotesEl = document.querySelector('.quotes');
     const loaderEl = document.querySelector('.loader');
 
-    // get the quotes from API
-    //const getQuotes = async (page, limit) => {
-        //const API_URL = `http://missconceptions.net/greenStatements/quotes.json/?page=${page}&limit=${limit}`;
-    //    const API_URL = 'http://missconceptions.net/greenStatements/quotes.json/?page=${page}&limit=${limit}';
-        //const API_URL = '../quotes.json/?page=${page}&limit=${limit}';
-        //const response = await fetch(API_URL);
-        // handle 404
-        //if (!response.ok) {
-        //    throw new Error(`An error occurred: ${response.status}`);
-        //}
-        //return await response.json();
-//    }
-
 // get the quotes from the url
     const getQuotes = async (page, limit) => {
-        const API_URL = 'http://www.missconceptions.net/greenStatements/quotes.json';
+        const API_URL = '../quotes.json';
         const response = await fetch(API_URL);
         // handle 404
         if (!response.ok) {
